@@ -20,13 +20,14 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <h1 class="display-3  text-white">CloudAM Consulting</h1>
-                                <p class="lead  text-white">A professional developer skilled in the latest AWS
-                                    technologies and Java</p>
+                                <p class="lead  text-white">A professional developer skilled in the latest AWS and Java
+                                    technologies</p>
                                 <div class="btn-wrapper">
                                     <base-button tag="a"
                                                  class="mb-3 mb-sm-0"
                                                  type="white"
-                                                 icon="ni ni-send">
+                                                 icon="ni ni-send"
+                                                 v-scroll-to="'#contactme'">
                                         Contact
                                     </base-button>
                                 </div>
@@ -259,7 +260,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section-lg pt-lg-0 section-contact-us">
+        <section class="section section-lg pt-lg-0 section-contact-us" id="contactme">
             <div class="container">
                 <div class="row justify-content-center mt--300">
                     <div class="col-lg-8">
