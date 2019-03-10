@@ -19,7 +19,7 @@
                     <div class="col px-0">
                         <div class="row">
                             <div class="col-lg-6">
-                                <h1 class="display-3  text-white">CloudAM Consulting</h1>
+                                <h1 class="display-3  text-white">CloudAM LTD</h1>
                                 <p class="lead  text-white">A professional developer skilled in the latest AWS and Java
                                     technologies</p>
                                 <div class="btn-wrapper">
@@ -48,33 +48,28 @@
                                     <icon name="ni ni-check-bold" type="primary" rounded class="mb-4">
                                     </icon>
                                     <h6 class="text-primary text-uppercase">Download Argon test</h6>
-                                    <p class="description mt-3">Argon is a great free UI package based on Bootstrap 4
-                                        that includes the most important components and features.</p>
+                                    <p class="description mt-3">I am have worked in a plethora of different work environments from startup's to SME.</p>
                                     <div>
                                         <badge type="primary" rounded>design</badge>
                                         <badge type="primary" rounded>system</badge>
                                         <badge type="primary" rounded>creative</badge>
                                     </div>
-                                    <base-button tag="a" href="#" type="primary" class="mt-4">
-                                        Learn more
-                                    </base-button>
                                 </card>
                             </div>
                             <div class="col-lg-4">
                                 <card class="border-0" hover shadow body-classes="py-5">
                                     <icon name="ni ni-istanbul" type="success" rounded class="mb-4">
                                     </icon>
-                                    <h6 class="text-success text-uppercase">Build Something</h6>
-                                    <p class="description mt-3">Argon is a great free UI package based on Bootstrap
-                                        4 that includes the most important components and features.</p>
+                                    <h6 class="text-success text-uppercase">UK Based</h6>
+                                    <p class="description mt-3">Based in Milton Keynes, UK with quick access to
+                                        London </p>
+                                    <p class="description mt-3">With the ability to remote work anywhere in the
+                                        world</p>
                                     <div>
                                         <badge type="success" rounded>business</badge>
                                         <badge type="success" rounded>vision</badge>
                                         <badge type="success" rounded>success</badge>
                                     </div>
-                                    <base-button tag="a" href="#" type="success" class="mt-4">
-                                        Learn more
-                                    </base-button>
                                 </card>
                             </div>
                             <div class="col-lg-4">
@@ -82,16 +77,12 @@
                                     <icon name="ni ni-planet" type="warning" rounded class="mb-4">
                                     </icon>
                                     <h6 class="text-warning text-uppercase">Prepare Launch</h6>
-                                    <p class="description mt-3">Argon is a great free UI package based on Bootstrap
-                                        4 that includes the most important components and features.</p>
+                                    <p class="description mt-3">With multiple projects under my belt I am well versed in deadlines and delivering high quality code. </p>
                                     <div>
                                         <badge type="warning" rounded>marketing</badge>
                                         <badge type="warning" rounded>product</badge>
                                         <badge type="warning" rounded>launch</badge>
                                     </div>
-                                    <base-button tag="a" href="#" type="warning" class="mt-4">
-                                        Learn more
-                                    </base-button>
                                 </card>
                             </div>
                         </div>
