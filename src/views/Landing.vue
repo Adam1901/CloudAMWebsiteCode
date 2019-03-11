@@ -114,12 +114,10 @@
                                       rounded></icon>
                             </div>
                             <div class="pl-4">
-                                <h4 class="display-3 text-white">Modern Interface</h4>
-                                <p class="text-white">The Arctic Ocean freezes every winter and much of the sea-ice then
-                                    thaws every summer, and that process will continue whatever happens.</p>
+                                <h4 class="display-3 text-white">Modern technologies</h4>
                             </div>
                         </div>
-                        <card shadow class="shadow-lg--hover mt-5">
+                        <card hover shadow class="shadow-lg--hover mt-5">
                             <div class="d-flex px-3">
                                 <div>
                                     <icon name="ni ni-satisfied" gradient="success" color="white" shadow
@@ -127,13 +125,14 @@
                                 </div>
                                 <div class="pl-4">
                                     <h5 class="title text-success">Awesome Support</h5>
-                                    <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws
-                                        every summer, and that process will continue whatever happens.</p>
-                                    <a href="#" class="text-success">Learn more</a>
+                                    <p>When I create something not only do a put a lot of thought into how to build
+                                        something, but how it is going to be used. And if things do go wrong, I will
+                                        always fix them.</p>
+                                    <a v-scroll-to="'#contactme'" class="text-success">Contact me</a>
                                 </div>
                             </div>
                         </card>
-                        <card shadow class="shadow-lg--hover mt-5">
+                        <card hover shadow class="shadow-lg--hover mt-5">
                             <div class="d-flex px-3">
                                 <div>
                                     <icon name="ni ni-active-40" gradient="warning" color="white" shadow
@@ -141,9 +140,10 @@
                                 </div>
                                 <div class="pl-4">
                                     <h5 class="title text-warning">Modular Components</h5>
-                                    <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws
-                                        every summer, and that process will continue whatever happens.</p>
-                                    <a href="#" class="text-warning">Learn more</a>
+                                    <p>I am well practised in modern containerised microservices and the latest AWS
+                                        technologies. I've deployed multiple production ready applications which are
+                                        still running inside AWS.</p>
+                                    <a v-scroll-to="'#contactme'" class="text-warning">Contact me</a>
                                 </div>
                             </div>
                         </card>
@@ -162,9 +162,8 @@
                 <div class="row text-center justify-content-center">
                     <div class="col-lg-10">
                         <h2 class="display-3 text-white">Build something</h2>
-                        <p class="lead text-white">According to the National Oceanic and Atmospheric Administration,
-                            Ted, Scambos, NSIDClead scentist, puts the potentially record low maximum sea ice extent
-                            tihs year down to low ice.</p>
+                        <p class="lead text-white">I will take every single request made very professionally, building
+                            relationships with customers and clients is very very important to me.</p>
                     </div>
                 </div>
                 <div class="row row-grid mt-5">
@@ -172,13 +171,13 @@
                         <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon>
                         <h5 class="text-white mt-3">Building tools</h5>
                         <p class="text-white mt-3">I am well versed in the most modern cloud technologies from AWS and
-                            have over 10 years of programming experience.</p>
+                            have over 10 years of programming experience, of building well tested readable code.</p>
                     </div>
                     <div class="col-lg-6">
                         <icon name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon>
                         <h5 class="text-white mt-3">Grow your market</h5>
-                        <p class="text-white mt-3">Some quick example text to build on the card title and make up the
-                            bulk of the card's content.</p>
+                        <p class="text-white mt-3">With many, many client facing meetings under my belt I am great
+                            in front of clients in my areas of expertise.</p>
                     </div>
                 </div>
             </div>
@@ -192,7 +191,8 @@
                             <base-alert type="danger" dismissible v-if="messageNYI">
                                 <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
                                 <span class="alert-inner--text">Not Yet Implemented</span>
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close" @click="dismissNYI">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"
+                                        @click="dismissNYI">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </base-alert>
@@ -236,7 +236,7 @@
                 console.log("send message")
                 this.messageNYI = true;
             },
-            dismissNYI(){
+            dismissNYI() {
                 debugger
                 this.messageNYI = false;
             }

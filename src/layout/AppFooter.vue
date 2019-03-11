@@ -7,7 +7,7 @@
                     <div class="copyright">
                         &copy; {{year}}
                         <a href="https://www.creative-tim.com" target="_blank" rel="noopener">Creative Tim</a>
-                        <a> & CloudAM.</a>
+                        <a> & CloudAM LTD.</a>
 
                     </div>
                 </div>
