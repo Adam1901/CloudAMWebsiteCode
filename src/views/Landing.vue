@@ -30,11 +30,11 @@
                                         Contact
                                     </base-button>
                                     <dropdown>
-                                        <base-button slot="title" type="success" class="dropdown-toggle">
+                                        <base-button icon="ni ni-paper-diploma" slot="title" type="success"
+                                                     class="dropdown-toggle mb-3 mb-sm-0">
                                             CV
                                         </base-button>
-                                        <!--<a target="_blank" class="dropdown-item" href="/CV/AdamMeadows.md">Text</a>-->
-                                        <div class="dropdown-divider"></div>
+                                        <a target="_blank" class="dropdown-item" href="/CV/AdamMeadows.html">Web</a>
                                         <a target="_blank" class="dropdown-item" href="/CV/AdamMeadows.pdf">PDF</a>
                                     </dropdown>
                                 </div>
@@ -55,7 +55,7 @@
                                     <icon name="ni ni-check-bold" type="primary" rounded class="mb-4">
                                     </icon>
                                     <h6 class="text-primary text-uppercase">Proven success</h6>
-                                    <p class="description mt-3">I am have worked in a plethora of different work
+                                    <p class="description mt-3">I have worked in a plethora of different work
                                         environments from side projects, startup's to SME.</p>
                                     <div>
                                         <badge type="primary" rounded>design</badge>
@@ -133,7 +133,7 @@
                                 </div>
                                 <div class="pl-4">
                                     <h5 class="title text-success">Awesome Support</h5>
-                                    <p>When I create something not only do a put a lot of thought into how to build
+                                    <p>When I create something not only do I put a lot of thought into how to build
                                         something, but how it is going to be used. And if things do go wrong, I will
                                         always fix them.</p>
                                     <a v-scroll-to="'#contactme'" class="text-success">Contact me</a>
