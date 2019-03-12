@@ -29,6 +29,14 @@
                                                  v-scroll-to="'#contactme'">
                                         Contact
                                     </base-button>
+                                    <dropdown>
+                                        <base-button slot="title" type="success" class="dropdown-toggle">
+                                            CV
+                                        </base-button>
+                                        <!--<a target="_blank" class="dropdown-item" href="/CV/AdamMeadows.md">Text</a>-->
+                                        <div class="dropdown-divider"></div>
+                                        <a target="_blank" class="dropdown-item" href="/CV/AdamMeadows.pdf">PDF</a>
+                                    </dropdown>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +171,7 @@
                     <div class="col-lg-10">
                         <h2 class="display-3 text-white">Build something</h2>
                         <p class="lead text-white">I will take every single request made very professionally, building
-                            relationships with customers and clients is very very important to me.</p>
+                            relationships with customers and clients is very important to me.</p>
                     </div>
                 </div>
                 <div class="row row-grid mt-5">
@@ -176,7 +184,7 @@
                     <div class="col-lg-6">
                         <icon name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon>
                         <h5 class="text-white mt-3">Grow your market</h5>
-                        <p class="text-white mt-3">With many, many client facing meetings under my belt I am great
+                        <p class="text-white mt-3">With many client facing meetings under my belt I am great
                             in front of clients in my areas of expertise.</p>
                     </div>
                 </div>
@@ -223,9 +231,12 @@
 </template>
 
 <script>
+
+    import dropdown from '../components/BaseDropdown';
+
     export default {
         name: "home",
-        components: {},
+        components: {dropdown},
         data() {
             return {
                 messageNYI: false
