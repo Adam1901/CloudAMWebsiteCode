@@ -195,27 +195,30 @@
                 <div class="row justify-content-center mt--300">
                     <div class="col-lg-8">
                         <card gradient="secondary" shadow body-classes="p-lg-5">
-                            <h4 class="mb-1">Want to contact me?</h4>
-                            <base-alert type="danger" dismissible v-if="messageNYI">
+                            <base-alert type="success" dismissible v-if="messageSent">
                                 <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
-                                <span class="alert-inner--text">Not Yet Implemented</span>
+                                <span class="alert-inner--text">Message Sent</span>
                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close"
                                         @click="dismissNYI">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </base-alert>
+                            <h4 class="mb-1">Want to contact me?</h4>
                             <base-input class="mt-5"
                                         alternative
                                         placeholder="Your name"
-                                        addon-left-icon="ni ni-user-run">
+                                        addon-left-icon="ni ni-user-run"
+                                        v-model="name">
                             </base-input>
                             <base-input alternative
                                         placeholder="Email address"
-                                        addon-left-icon="ni ni-email-83">
+                                        addon-left-icon="ni ni-email-83"
+                                        v-model="email">
                             </base-input>
                             <base-input class="mb-4">
                                     <textarea class="form-control form-control-alternative" name="name" rows="4"
-                                              cols="80" placeholder="Type a message..."></textarea>
+                                              cols="80" placeholder="Type a message..."
+                                              v-model="message"></textarea>
                             </base-input>
                             <base-button type="default" round block size="lg"
                                          @click="sendMessage()">
@@ -239,18 +242,33 @@
         components: {dropdown},
         data() {
             return {
-                messageNYI: false
+                messageSent: false,
+                name: null,
+                email: null,
+                message: null
             }
         },
         methods: {
             sendMessage() {
-                console.log("send message")
-                this.messageNYI = true;
+
+                Email.send({
+                    SecureToken: "b17221ef-6393-4a3e-b247-c6593ab2a9c0",
+                    To: 'adam@cloudam.co.uk',
+                    From: 'adam@cloudam.co.uk',
+                    Subject: "CONTACT FORM FROM CLOUDAM.CO.UK",
+                    Body: this.email + "\n\n" + this.message
+                }).then(
+                    message => {
+                        if ('OK' === message) {
+                            this.messageSent = true;
+                            this.name = null;
+                            this.email = null;
+                            this.message = null;
+                        } else
+                            console.log(message);
+                    }
+                );
             },
-            dismissNYI() {
-                debugger
-                this.messageNYI = false;
-            }
         }
     };
 </script>
