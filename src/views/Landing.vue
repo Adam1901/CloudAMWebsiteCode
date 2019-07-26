@@ -69,7 +69,7 @@
                                     <icon name="ni ni-istanbul" type="success" rounded class="mb-4">
                                     </icon>
                                     <h6 class="text-success text-uppercase">UK Based</h6>
-                                    <p class="description mt-3">Based in Milton Keynes, UK with easy access to
+                                    <p class="description mt-3">Based in central Milton Keynes, UK with easy access to
                                         London. With the ability to remote work anywhere in the
                                         world.</p>
                                     <div>
