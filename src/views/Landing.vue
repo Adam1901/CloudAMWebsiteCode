@@ -150,7 +150,7 @@
                                     <h5 class="title text-warning">Modular Components</h5>
                                     <p>I am well practised in modern containerised microservices and the latest AWS
                                         technologies. I've deployed multiple production ready applications which are
-                                        still running inside AWS.</p>
+                                        still running inside AWS and other cloud platforms.</p>
                                     <a v-scroll-to="'#contactme'" class="text-warning">Contact me</a>
                                 </div>
                             </div>
