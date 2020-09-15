@@ -213,6 +213,23 @@
         </div>
       </div>
     </section>
+
+    <section class="py-6">
+      <div class="container">
+        <div class="row row-grid align-items-center">
+          <div class="col-md-6 order-md-2">
+            <img src="~/static/img/theme/landing-3.png" class="img-fluid" alt="Landing image 3">
+          </div>
+          <div class="col-md-6 order-md-1">
+            <div class="pr-md-5">
+              <h1>Contact me</h1>
+              <p>adam@cloudam.co.uk</p>
+              <nuxt-link to="/widgets" class="font-weight-bold text-info mt-5">Explore widgets</nuxt-link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 <script>
