@@ -1,200 +1,241 @@
-<h1 id="argon-design-system"><a href="https://www.creative-tim.com/product/vue-argon-design-system">Vue Argon Design System</a></h1>
+# [Nuxt Argon Dashboard PRO](https://github.com/creativetimofficial/ct-nuxt-argon-dashboard-pro) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
-<p><img src="https://s3.amazonaws.com/creativetim_bucket/products/92/original/opt_argon_vue_thumbnail.jpg?1534236902" alt="Product Gif" /></p>
 
-<p>Start your development with a Design System for Bootstrap 4. It is open source, free and it features many components that can help you create amazing websites.</p>
+## Documentation
+The documentation for the Nuxt Argon Dashboard is hosted at our [website](https://demos.creative-tim.com/nuxt-argon-dashboard-pro/documentation?ref=nadap-github-readme).
 
-<h4 id="fully-coded-components">Fully Coded Components</h4>
 
-<p>Vue Argon Design System is built with over 100 individual components, giving you the freedom of choosing and combining. All components can take variations in colour, that you can easily modify using SASS files.</p>
+## File Structure
+Within the download you'll find the following directories and files:
 
-<p>You will save a lot of time going from prototyping to full-functional code, because all elements are implemented. This Design System is coming with prebuilt examples, so the development process is seamless, switching from our pages to the real website is very easy to be done.</p>
-
-<p>Every element has multiple states for colors, styles, hover, focus, that you can easily access and use.</p>
-
-<h4 id="complex-documentation">Complex Documentation</h4>
-
-<p>Each element is well presented in a very complex documentation. You can read more about the idea behind this design system here. You can check the components here and the foundation here.</p>
-
-<h4 id="example-pages">Example Pages</h4>
-
-<p>If you want to get inspiration or just show something directly to your clients, you can jump start your development with our pre-built example pages. You will be able to quickly set up the basic structure for your web project.</p>
-
-<h2 id="table-of-contents">Table of Contents</h2>
-
-<ul>
-  <li><a href="#demo">Demo</a></li>
-  <li><a href="#quick-start">Quick Start</a></li>
-  <li><a href="#documentation">Documentation</a></li>
-  <li><a href="#file-structure">File Structure</a></li>
-  <li><a href="#browser-support">Browser Support</a></li>
-  <li><a href="#resources">Resources</a></li>
-  <li><a href="#reporting-issues">Reporting Issues</a></li>
-  <li><a href="#technical-support-or-questions">Technical Support or Questions</a></li>
-  <li><a href="#licensing">Licensing</a></li>
-  <li><a href="#useful-links">Useful Links</a></li>
-</ul>
-
-<h2 id="demo">Demo</h2>
-
-<ul>
-  <li><a href="https://demos.creative-tim.com/vue-argon-design-system">Index Page</a></li>
-  <li><a href="https://demos.creative-tim.com/vue-argon-design-system/#/landing">Landing page</a></li>
-  <li><a href="https://demos.creative-tim.com/vue-argon-design-system/#/profile">Profile Page</a></li>
-  <li><a href="https://demos.creative-tim.com/vue-argon-design-system/#/login">Login Page</a></li>
-  <li><a href="https://demos.creative-tim.com/vue-argon-design-system/#/register">Register Page</a></li>
-</ul>
-
-<p><a href="https://demos.creative-tim.com/argon-design-system">View More</a></p>
-
-<h2 id="quick-start">Quick start</h2>
-
-<ul>
-  <li><a href="https://github.com/creativetimofficial/vue-argon-design-system/archive/master.zip">Download from Github</a>.</li>
-  <li><a href="https://www.creative-tim.com/product/vue-argon-design-system">Download from Creative Tim</a>.</li>
-  <li>Clone the repo: <code class="highlighter-rouge">git clone https://github.com/creativetimofficial/vue-argon-design-system.git</code>.</li>
-</ul>
-
-<h2 id="documentation">Documentation</h2>
-
-<p>The documentation for the Vue Argon Design System is hosted at our <a href="https://demos.creative-tim.com/vue-argon-design-system">website</a>.</p>
-
-<h2 id="file-structure">File Structure</h2>
-
-<p>Within the download you’ll find the following directories and files:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>argon/
-|-- vue-argon-design-system
+```
+|-- nuxt-argon-dashboard-pro
     |-- App.vue
     |-- main.js
-    |-- router.js
+    |-- polyfills.js
     |-- assets
-    |   |-- scss
-    |   |   |-- argon.scss
-    |   |   |-- bootstrap
-    |   |   |-- custom
-    |   |-- vendor
-    |       |-- font-awesome
-    |       |   |-- css
-    |       |   |   |-- font-awesome.css
-    |       |   |   |-- font-awesome.min.css
-    |       |   |-- fonts
-    |       |       |-- FontAwesome.otf
-    |       |       |-- fontawesome-webfont.eot
-    |       |       |-- fontawesome-webfont.svg
-    |       |       |-- fontawesome-webfont.ttf
-    |       |       |-- fontawesome-webfont.woff
-    |       |       |-- fontawesome-webfont.woff2
-    |       |-- nucleo
-    |           |-- css
-    |           |   |-- nucleo-svg.css
-    |           |   |-- nucleo.css
-    |           |-- fonts
-    |               |-- nucleo-icons.eot
-    |               |-- nucleo-icons.svg
-    |               |-- nucleo-icons.ttf
-    |               |-- nucleo-icons.woff
-    |               |-- nucleo-icons.woff2
+    |   |-- css
+    |   |   |-- nucleo
+    |   |-- sass
+    |       |-- argon.scss
+    |       |-- core
+    |       |-- custom
     |-- components
     |   |-- Badge.vue
+    |   |-- BaseAlert.vue
     |   |-- BaseButton.vue
-    |   |-- BaseCheckbox.vue
-    |   |-- BaseInput.vue
-    |   |-- BaseNav.vue
-    |   |-- BaseRadio.vue
-    |   |-- BaseSlider.vue
+    |   |-- BaseDropdown.vue
+    |   |-- BaseHeader.vue
+    |   |-- BasePagination.vue
+    |   |-- BaseProgress.vue
     |   |-- BaseSwitch.vue
-    |   |-- Card.vue
+    |   |-- BaseTable.vue
     |   |-- CloseButton.vue
-    |   |-- Icon.vue
+    |   |-- LoadingPanel.vue
+    |   |-- Modal.vue
     |   |-- NavbarToggleButton.vue
-    |-- layout
-    |   |-- AppFooter.vue
-    |   |-- AppHeader.vue
+    |   |-- Slider.vue
+    |   |-- index.js
+    |   |-- Breadcrumb
+    |   |   |-- Breadcrumb.vue
+    |   |   |-- BreadcrumbItem.vue
+    |   |   |-- RouteBreadcrumb.vue
+    |   |-- Cards
+    |   |   |-- Card.vue
+    |   |   |-- StatsCard.vue
+    |   |-- Charts
+    |   |   |-- BarChart.js
+    |   |   |-- DoughnutChart.js
+    |   |   |-- LineChart.js
+    |   |   |-- PieChart.js
+    |   |   |-- config.js
+    |   |   |-- globalOptionsMixin.js
+    |   |   |-- optionHelpers.js
+    |   |-- Collapse
+    |   |   |-- Collapse.vue
+    |   |   |-- CollapseItem.vue
+    |   |-- Feed
+    |   |   |-- Comment.vue
+    |   |-- Inputs
+    |   |   |-- BaseCheckbox.vue
+    |   |   |-- BaseInput.vue
+    |   |   |-- BaseRadio.vue
+    |   |   |-- DropzoneFileUpload.vue
+    |   |   |-- FileInput.vue
+    |   |   |-- HtmlEditor.vue
+    |   |   |-- IconCheckbox.vue
+    |   |   |-- TagsInput.vue
+    |   |-- Navbar
+    |   |   |-- BaseNav.vue
+    |   |   |-- NavbarToggleButton.vue
+    |   |-- NotificationPlugin
+    |   |   |-- Notification.vue
+    |   |   |-- Notifications.vue
+    |   |   |-- index.js
+    |   |-- SidebarPlugin
+    |   |   |-- SideBar.vue
+    |   |   |-- SidebarItem.vue
+    |   |   |-- index.js
+    |   |-- Tabs
+    |   |   |-- Tab.vue
+    |   |   |-- Tabs.vue
+    |   |-- Timeline
+    |   |   |-- TimeLine.vue
+    |   |   |-- TimeLineItem.vue
+    |   |-- WorldMap
+    |       |-- AsyncWorldMap.vue
+    |       |-- WorldMap.vue
+    |-- directives
+    |   |-- click-ouside.js
     |-- plugins
-    |   |-- argon-kit.js
+    |   |-- dashboard-plugin.js
     |   |-- globalComponents.js
     |   |-- globalDirectives.js
+    |-- routes
+    |   |-- router.js
+    |   |-- routes.js
+    |   |-- starterRouter.js
+    |-- util
+    |   |-- throttle.js
     |-- views
-        |-- Components.vue
-        |-- Landing.vue
-        |-- Login.vue
-        |-- Profile.vue
-        |-- Register.vue
-        |-- components
-            |-- BasicElements.vue
-            |-- Carousel.vue
-            |-- CustomControls.vue
-            |-- DownloadSection.vue
-            |-- Examples.vue
-            |-- Hero.vue
-            |-- Icons.vue
-            |-- Inputs.vue
-            |-- JavascriptComponents.vue
-            |-- Navigation.vue
+        |-- Charts.vue
+        |-- Widgets.vue
+        |-- Calendar
+        |   |-- Calendar.vue
+        |-- Components
+        |   |-- Buttons.vue
+        |   |-- Cards.vue
+        |   |-- GridSystem.vue
+        |   |-- Icons.vue
+        |   |-- Notifications.vue
+        |   |-- Typography.vue
+        |-- Dashboard
+        |   |-- ActivityFeed.vue
+        |   |-- AlternativeDashboard.vue
+        |   |-- Dashboard.vue
+        |   |-- LightTable.vue
+        |   |-- PageVisitsTable.vue
+        |   |-- ProgressTrackList.vue
+        |   |-- SocialTrafficTable.vue
+        |   |-- TaskList.vue
+        |   |-- UserList.vue
+        |-- Forms
+        |   |-- FormComponents.vue
+        |   |-- FormElements.vue
+        |   |-- FormValidation.vue
+        |   |-- FormValidation
+        |       |-- BrowserDefaultsValidation.vue
+        |       |-- CustomStylesValidation.vue
+        |       |-- ServerSideValidation.vue
+        |-- GeneralViews
+        |   |-- NotFoundPage.vue
+        |-- Layout
+        |   |-- Content.vue
+        |   |-- ContentFooter.vue
+        |   |-- DashboardLayout.vue
+        |   |-- DashboardNavbar.vue
+        |-- Maps
+        |   |-- API_KEY.js
+        |   |-- GoogleMaps.vue
+        |   |-- VectorMaps.vue
+        |-- Pages
+        |   |-- AuthLayout.vue
+        |   |-- Home.vue
+        |   |-- Lock.vue
+        |   |-- Login.vue
+        |   |-- Pricing.vue
+        |   |-- Register.vue
+        |   |-- TimeLinePage.vue
+        |   |-- UserProfile.vue
+        |   |-- UserProfile
+        |       |-- EditProfileForm.vue
+        |       |-- UserCard.vue
+        |-- Starter
+        |   |-- SampleFooter.vue
+        |   |-- SampleLayout.vue
+        |   |-- SampleNavbar.vue
+        |   |-- SamplePage.vue
+        |-- Tables
+        |   |-- PaginatedTables.vue
+        |   |-- RegularTables.vue
+        |   |-- SortableTables.vue
+        |   |-- projects.js
+        |   |-- users.js
+        |   |-- users2.js
+        |   |-- PaginatedTables
+        |   |   |-- clientPaginationMixin.js
+        |   |-- RegularTables
+        |       |-- CheckboxColoredTable.vue
+        |       |-- CheckboxTable.vue
+        |       |-- DarkTable.vue
+        |       |-- InlineActionsTable.vue
+        |       |-- LightTable.vue
+        |       |-- StripedTable.vue
+        |       |-- TranslucentTable.vue
+        |-- Widgets
+            |-- CalendarWidget.vue
+            |-- CreditCard.vue
+            |-- MembersCard.vue
+            |-- PaypalCard.vue
+            |-- ProgressTrackList.vue
+            |-- StatsCards.vue
+            |-- TaskList.vue
+            |-- TimelineCard.vue
+            |-- VectorMapCard.vue
+            |-- VisaCard.vue
 
-</code></pre></div></div>
+```
 
-<h2 id="browser-support">Browser Support</h2>
 
-<p>At present, we officially aim to support the last two versions of the following browsers:</p>
+## Browser Support
 
-<p><img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64" />
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64" />
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64" />
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64" />
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64" /></p>
+At present, we officially aim to support the last two versions of the following browsers:
 
-<h2 id="resources">Resources</h2>
+<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/chrome-logo.png?raw=true" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/firefox-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/edge-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/safari-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/opera-logo.png" width="64" height="64">
 
-<ul>
-  <li>Demo: <a href="https://demos.creative-tim.com/argon-design-system">https://demos.creative-tim.com/vue-argon-design-system</a></li>
-  <li>Download: <a href="https://www.creative-tim.com/product/vue-argon-design-system">https://www.creative-tim.com/product/vue-argon-design-system</a></li>
-  <li>License Agreement: <a href="https://www.creative-tim.com/license">https://www.creative-tim.com/license</a></li>
-  <li>Support: <a href="https://www.creative-tim.com/contact-us">https://www.creative-tim.com/contact-us</a></li>
-  <li>Issues: <a href="https://github.com/creativetimofficial/vue-argon-design-system/issues">Github Issues Page</a></li>
-</ul>
 
-<h2 id="reporting-issues">Reporting Issues</h2>
 
-<p>We use GitHub Issues as the official bug tracker for the Vue Argon Design System. Here are some advices for our users that want to report an issue:</p>
+## Resources
+- Demo: <https://demos.creative-tim.com/nuxt-argon-dashboard-pro/dashboard?ref=nvadp-github-readme>
+- Download Page: <https://www.creative-tim.com/product/nuxt-argon-dashboard-pro?ref=nvadp-github-readme>
+- Documentation: <https://demos.creative-tim.com/nuxt-argon-dashboard-pro/documentation?ref=nvadp-github-readme>
+- License Agreement: <https://www.creative-tim.com/license?ref=nvadp-github-readme>
+- Support: <https://www.creative-tim.com/contact-us?ref=nvadp-github-readme>
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-nuxt-argon-dashboard-pro/issues?ref=nvadp-github-readme)
 
-<ol>
-  <li>Make sure that you are using the latest version of the Vue Argon Design System. Check the CHANGELOG from your copy on our <a href="https://www.creative-tim.com">website</a>.</li>
-  <li>Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.</li>
-  <li>Some issues may be browser specific, so specifying in what browser you encountered the issue might help.</li>
-</ol>
+## Reporting Issues
 
-<h2 id="technical-support-or-questions">Technical Support or Questions</h2>
+We use GitHub Issues as the official bug tracker for the Material Kit. Here are some advices for our users that want to report an issue:
 
-<p>If you have questions or need help integrating the product please <a href="https://www.creative-tim.com/contact-us">contact us</a> instead of opening an issue.</p>
+1. Make sure that you are using the latest version of the Material Kit. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=ada-github-readme).
+2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
-<h2 id="licensing">Licensing</h2>
+## Licensing
 
-<ul>
-  <li>
-    <p>Copyright © 2018 Creative Tim (https://www.creative-tim.com)</p>
-  </li>
-  <li>
-    <p>Licensed under MIT (https://github.com/creativetimofficial/vue-argon-design-system/blob/master/LICENSE.md)</p>
-  </li>
-</ul>
+- Copyright 2018 Creative Tim (https://www.creative-tim.com/?ref=ada-github-readme)
 
-<h2 id="useful-links">Useful Links</h2>
+- Licensed under MIT (https://github.com/creativetimofficial/vue-argon-dashboard/blob/master/LICENSE.md)
 
-<ul>
-  <li><a href="https://www.creative-tim.com/bootstrap-themes">More products</a> from Creative Tim</li>
-  <li><a href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w">Tutorials</a></li>
-  <li><a href="https://www.creative-tim.com/bootstrap-themes/free">Freebies</a> from Creative Tim</li>
-  <li><a href="https://www.creative-tim.com/affiliates/new">Affiliate Program</a> (earn money)</li>
-</ul>
+## Useful Links
 
-<h2 id="social-media">Social Media</h2>
+- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w?ref=creativetim)
+- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=ada-github-readme) (earn money)
+- [Blog Creative Tim](http://blog.creative-tim.com/?ref=ada-github-readme)
+- [Free Products](https://www.creative-tim.com/bootstrap-themes/free?ref=ada-github-readme) from Creative Tim
+- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=ada-github-readme) from Creative Tim
+- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=ada-github-readme) from Creative Tim
+- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=ada-github-readme) from Creative Tim
+- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=ada-github-readme) from Creative Tim
+- [More products](https://www.creative-tim.com/bootstrap-themes?ref=ada-github-readme) from Creative Tim
+- Check our Bundles [here](https://www.creative-tim.com/bundles?ref=ada-github-readme)
 
-<ul>
-  <li>Twitter: <a href="https://twitter.com/CreativeTim">https://twitter.com/CreativeTim</a></li>
-  <li>Facebook: <a href="https://www.facebook.com/CreativeTim">https://www.facebook.com/CreativeTim</a></li>
-  <li>Dribbble: <a href="https://dribbble.com/creativetim">https://dribbble.com/creativetim</a></li>
-  <li>Google+: <a href="https://plus.google.com/+CreativetimPage">https://plus.google.com/+CreativetimPage</a></li>
-  <li>Instagram: <a href="https://www.instagram.com/CreativeTimOfficial">https://www.instagram.com/CreativeTimOfficial</a></li>
-</ul>
+### Social Media
+
+Twitter: <https://twitter.com/CreativeTim?ref=creativetim>
+
+Facebook: <https://www.facebook.com/CreativeTim?ref=creativetim>
+
+Dribbble: <https://dribbble.com/creativetim?ref=creativetim>
+
+Instagram: <https://www.instagram.com/CreativeTimOfficial?ref=creativetim>
