@@ -20,7 +20,7 @@ const pkg = require('./package')
 console.log('ENV', process.env.NODE_ENV)
 
 module.exports = {
-  mode: 'universal',
+  mode: 'spa',
   router: {
     base: '/',
     linkExactActiveClass: 'active'
