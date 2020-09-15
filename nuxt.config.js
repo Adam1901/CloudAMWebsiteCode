@@ -21,6 +21,7 @@ console.log('ENV', process.env.NODE_ENV)
 
 module.exports = {
   ssr: false,
+  target: 'static',
   router: {
     base: '/',
     linkExactActiveClass: 'active'
