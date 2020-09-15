@@ -21,7 +21,6 @@ console.log('ENV', process.env.NODE_ENV)
 
 module.exports = {
   mode: 'spa',
-  ssr: false,
   target: 'static',
   router: {
     base: '/',

@@ -335,13 +335,12 @@
   </div>
 </template>
 <script>
-import {Tooltip} from 'element-ui'
-
-export default {
-  layout: 'AuthLayout',
-  name: 'home-page',
-  components: {
-    [Tooltip.name]: Tooltip
-  }
-};
+  import { Tooltip } from 'element-ui'
+  export default {
+    layout: 'AuthLayout',
+    name: 'home-page',
+    components: {
+      [Tooltip.name]: Tooltip
+    }
+  };
 </script>
