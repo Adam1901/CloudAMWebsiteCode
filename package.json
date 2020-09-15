@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-argon-dashboard-pro",
-  "version": "1.0.0",
-  "description": "Nuxt version of the Vue Argon Dashboard Pro",
-  "author": "Creative Tim",
+  "name": "cloudam",
+  "version": "1.0.1",
+  "description": "CloudAM",
+  "author": "Adam Meadows & Creative Tim",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -39,6 +39,7 @@
     "vue-chartjs": "^3.5.0",
     "vue-clipboard2": "^0.3.0",
     "vue-flatpickr-component": "^8.1.2",
+    "vue-scrollto": "^2.18.2",
     "vue2-transitions": "^0.2.3"
   },
   "devDependencies": {
