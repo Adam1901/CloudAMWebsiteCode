@@ -8,18 +8,18 @@
       class="navbar-horizontal navbar-main"
       expand="lg"
     >
-      <div slot="brand" class="navbar-wrapper">
-        <nuxt-link class="navbar-brand" to="/">
-          <img src="img/brand/cloudam.png" alt="Logo white"  style="height: 80px">
-        </nuxt-link>
-      </div>
+<!--      <div slot="brand" class="navbar-wrapper">-->
+<!--        <nuxt-link class="navbar-brand" to="/">-->
+<!--          <img src="img/brand/cloudam.png" alt="Logo white"  style="height: 80px;">-->
+<!--        </nuxt-link>-->
+<!--      </div>-->
 
      <template>
        <div class="navbar-collapse-header">
          <div class="row">
            <div class="col-6 collapse-brand">
              <nuxt-link to="/">
-               <img src="img/brand/green.png" alt="Logo green">
+               <img src="img/brand/cloudam.png" alt="Logo green">
              </nuxt-link>
            </div>
            <div class="col-6 collapse-close">

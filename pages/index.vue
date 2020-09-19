@@ -1,7 +1,7 @@
 <template>
   <div>
     <!--Header-->
-    <div class="header bg-success pt-5 pb-7">
+    <div class="header bg-gradient-primary pt-5 pb-7">
       <div class="container">
         <div class="header-body">
           <div class="row align-items-center">
@@ -13,7 +13,7 @@
                 <div class="mt-5">
                   <base-button v-scroll-to="'#contactme'" class="btn btn-neutral my-2">Contact</base-button>
                   <base-dropdown>
-                    <base-button slot="title-container" type="primary" class="dropdown-toggle">
+                    <base-button slot="title-container" type="success" class="dropdown-toggle">
                       CV
                     </base-button>
                     <a target="_blank" class="dropdown-item" href="/CV/AdamMeadows.html">Web</a>
@@ -23,8 +23,8 @@
                 </div>
 
                 <div class="mt-5">
-                  <nuxt-link to="/dashboard" class="btn btn-neutral my-2">Que</nuxt-link>
-                  <nuxt-link to="/dashboard" class="btn btn-neutral my-2">Track and Trace</nuxt-link>
+                  <nuxt-link to="/que" class="btn btn-neutral my-2">Que</nuxt-link>
+                  <nuxt-link to="/tat" class="btn btn-neutral my-2">Track and Trace</nuxt-link>
                 </div>
               </div>
             </div>
@@ -37,7 +37,8 @@
                         <i class="ni ni-active-40"></i>
                       </div>
                       <h5 class="h3">Projects</h5>
-                      <p>Currently working and supporting a major government project</p>
+                      <p>Currently working and supporting a major government project.</p>
+                      <p>Actively marketing and developing a track and trace and customer journey management</p>
                     </div>
                   </div>
                   <div class="card">
@@ -152,7 +153,7 @@
           <div class="col-md-6 order-md-1">
             <div class="pr-md-5">
               <h1>Track and Trace</h1>
-              <p>In these unprecedented time businesses need a help and support TODO</p>
+              <p>In these unprecedented times businesses need help and support to meeting Public Health England new and changing requirements.</p>
               <ul class="list-unstyled mt-5">
                 <li class="py-2">
                   <div class="d-flex align-items-center">
@@ -191,6 +192,7 @@
                   </div>
                 </li>
               </ul>
+              <nuxt-link to="/tat" class="font-weight-bold text-info mt-5">Explore Track and Trace further</nuxt-link>
             </div>
           </div>
         </div>
@@ -206,8 +208,8 @@
           <div class="col-md-6 order-md-1">
             <div class="pr-md-5">
               <h1>Que</h1>
-              <p>Que allows you to manage customers in store TODO</p>
-              <nuxt-link to="/widgets" class="font-weight-bold text-info mt-5">Explore widgets</nuxt-link>
+              <p>Que allows you to manage customers in store</p>
+              <nuxt-link to="/que" class="font-weight-bold text-info mt-5">Explore Que further</nuxt-link>
             </div>
           </div>
         </div>
@@ -220,11 +222,11 @@
           <div class="col-md-6 order-md-2">
             <img src="~/static/img/theme/landing-3.png" class="img-fluid" alt="Landing image 3">
           </div>
-          <div class="col-md-6 order-md-1">
+          <div id='contactme' class="col-md-6 order-md-1">
             <div class="pr-md-5">
               <h1>Contact me</h1>
-              <p>adam@cloudam.co.uk</p>
-              <nuxt-link to="/widgets" class="font-weight-bold text-info mt-5">Explore widgets</nuxt-link>
+              <p><a href="mailto:adam@cloudam.co.uk">adam@cloudam.co.uk</a></p>
+              <p><a href="tel:+447700022012">+447700022012</a></p>
             </div>
           </div>
         </div>
