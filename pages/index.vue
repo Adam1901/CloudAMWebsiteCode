@@ -103,7 +103,7 @@
     <section class="py-6 pb-9 bg-default">
       <div class="row justify-content-center text-center">
         <div class="col-md-6">
-          <h2 class="display-3 text-white">Build something</h2>
+          <h2 class="display-3 text-white">About me</h2>
           <p class="lead text-white">I will take every single request made very professionally, building relationships with customers and clients is very important to me.</p>
         </div>
       </div>

@@ -10,9 +10,7 @@
                 <h2 class="display-4 text-white font-weight-light">{{ subtitle }}</h2>
 
                 <div class="mt-5">
-                  <base-button class="btn btn-neutral my-2">
-                    <a target="_blank" :href="demoLink">Demo</a>
-                  </base-button>
+                    <base-button class="btn btn-neutral my-2" @click="window.open(demoLink, '_blank')">Demo</base-button>
                 </div>
               </div>
             </div>
@@ -84,6 +82,11 @@
           </div>
         </div>
       </div>
+      <div class="separator separator-bottom separator-skew zindex-100">
+        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
     </div>
 
     <section class="py-6 pb-9 bg-default">
@@ -128,7 +131,6 @@
       </div>
     </section>
 
-
   </div>
 </template>
 <script>
@@ -146,24 +148,24 @@ export default {
       subtitle: 'QUE manages the customer\'s journeys and appointments in all stores. With support for kiosks, media devices and as flexible as you need.',
       demoLink: 'http://demo.cloudam.co.uk',
       first: {
-        title: 'QUE1',
-        text: '1',
-        tags: ['1111', '1111', '11111']
+        title: 'Customer Journey',
+        text: 'Design a perfect customer journey for your brand',
+        tags: ['design', 'branch', 'brand']
       },
       second: {
-        title: 'QUE2',
-        text: '2',
-        tags: ['Aaaa', 'Bvvv', 'Ccccc']
+        title: 'Works in any store',
+        text: 'Will work for any stores or branches. From a single coffee shop to a global brand',
+        tags: ['Scalable', 'secure', 'affordable']
       },
       third: {
-        title: 'QUE',
-        text: '3',
-        tags: ['A3', 'B3', '3C']
+        title: 'Build using the latest technologies',
+        text: 'Build ontop of the latest technologies to ensure an agile flexible product',
+        tags: ['secure','safe','fast']
       },
       fourth: {
-        title: 'QUE4',
-        text: '4',
-        tags: ['A4', 'B4', 'C4']
+        title: 'User experience',
+        text: 'Build with the user in mind',
+        tags: ['UX', 'Design', 'easy']
       },
       mid: {
         top: {
