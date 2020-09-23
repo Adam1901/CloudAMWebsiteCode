@@ -1,6 +1,134 @@
 <template>
   <div>
-    que
+    <div class="header bg-gradient-primary pt-5 pb-7">
+      <div class="container">
+        <div class="header-body">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="pr-5">
+                <h1 class="display-2 text-white font-weight-bold mb-0">{{ title }}</h1>
+                <h2 class="display-4 text-white font-weight-light">{{ subtitle }}</h2>
+
+                <div class="mt-5">
+                  <base-button class="btn btn-neutral my-2">
+                    <a target="_blank" :href="demoLink">Demo</a>
+                  </base-button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row pt-5">
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow mb-4">
+                        <i class="ni ni-active-40"></i>
+                      </div>
+                      <h5 class="h3">{{ first.title }}</h5>
+                      <p>{{ first.text }}</p>
+                      <div>
+                        <template v-for="tag in first.tags">
+                          <badge type="success" rounded>{{ tag }}</badge>
+                        </template>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow mb-4">
+                        <i class="ni ni-istanbul"></i>
+                      </div>
+                      <h5 class="h3">{{ second.title }}</h5>
+                      <p>{{ second.text }}</p>
+
+                      <div>
+                        <template v-for="tag in second.tags">
+                          <badge type="success" rounded>{{ tag }}</badge>
+                        </template>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 pt-lg-5 pt-4">
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <div class="icon icon-shape bg-gradient-success text-white rounded-circle shadow mb-4">
+                        <i class="ni ni-planet"></i>
+                      </div>
+                      <h5 class="h3">{{ third.title }}</h5>
+                      <p>{{ third.text }}</p>
+                      <div>
+                        <template v-for="tag in third.tags">
+                          <badge type="success" rounded>{{ tag }}</badge>
+                        </template>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <div class="icon icon-shape bg-gradient-warning text-white rounded-circle shadow mb-4">
+                        <i class="ni ni-active-40"></i>
+                      </div>
+                      <h5 class="h3">{{ fourth.title }}</h5>
+                      <p>{{ fourth.text }}</p>
+                      <div>
+                        <template v-for="tag in fourth.tags">
+                          <badge type="success" rounded>{{ tag }}</badge>
+                        </template>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="py-6 pb-9 bg-default">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-6">
+          <h2 class="display-3 text-white">{{ mid.top.title }}</h2>
+          <p class="lead text-white">{{ mid.top.text }}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-lg pt-lg-0 mt--7">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card card-lift--hover shadow border-0">
+                  <div class="card-body py-5">
+                    <div class="icon icon-shape bg-gradient-primary text-white rounded-circle mb-4">
+                      <i class="ni ni-check-bold"></i>
+                    </div>
+                    <h4 class="h3 text-primary text-uppercase">{{ mid.left.title }}</h4>
+                    <p>{{ mid.left.text }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card card-lift--hover shadow border-0">
+                  <div class="card-body py-5">
+                    <div class="icon icon-shape bg-gradient-success text-white rounded-circle mb-4">
+                      <i class="ni ni-istanbul"></i>
+                    </div>
+                    <h4 class="h3 text-success text-uppercase">{{ mid.right.title }}</h4>
+                    <p class="description mt-3">{{ mid.right.text }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
   </div>
 </template>
 <script>
@@ -11,6 +139,48 @@ export default {
   name: 'que',
   components: {
     [Tooltip.name]: Tooltip
+  },
+  data() {
+    return {
+      title: 'QUE',
+      subtitle: 'QUE manages the customer\'s journeys and appointments in all stores. With support for kiosks, media devices and as flexible as you need.',
+      demoLink: 'http://demo.cloudam.co.uk',
+      first: {
+        title: 'QUE1',
+        text: '1',
+        tags: ['1111', '1111', '11111']
+      },
+      second: {
+        title: 'QUE2',
+        text: '2',
+        tags: ['Aaaa', 'Bvvv', 'Ccccc']
+      },
+      third: {
+        title: 'QUE',
+        text: '3',
+        tags: ['A3', 'B3', '3C']
+      },
+      fourth: {
+        title: 'QUE4',
+        text: '4',
+        tags: ['A4', 'B4', 'C4']
+      },
+      mid: {
+        top: {
+          title: 'middle',
+          text: 'midText'
+        },
+        left: {
+          title: 'midLeft',
+          text: 'midleft'
+        },
+        right: {
+          title: 'midR',
+          text: 'midR'
+        }
+      },
+
+    }
   }
 };
 </script>
