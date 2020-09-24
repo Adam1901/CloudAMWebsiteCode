@@ -11,7 +11,7 @@
                 <h2 class="display-4 text-white font-weight-light">A professional developer skilled in the latest AWS and Java technologies</h2>
 
                 <div class="mt-5">
-                  <base-button v-scroll-to="'#contactme'" class="btn btn-neutral my-2">Contact</base-button>
+                  <base-button v-scroll-to="'#contactme'" class="btn btn-neutral my-2">Contact Me</base-button>
                   <base-dropdown>
                     <base-button slot="title-container" type="success" class="dropdown-toggle">
                       CV
@@ -19,12 +19,12 @@
                     <a target="_blank" class="dropdown-item" href="/CV/AdamMeadows.html">Web</a>
                     <a target="_blank" class="dropdown-item" href="/CV/AdamMeadows.pdf">PDF</a>
                   </base-dropdown>
-
+                  <base-button v-scroll-to="'#id-about-me'" class="btn btn-neutral my-2">About me</base-button>
                 </div>
 
                 <div class="mt-5">
                   <nuxt-link to="/que" class="btn btn-neutral my-2">Que</nuxt-link>
-                  <nuxt-link to="/tat" class="btn btn-neutral my-2">Track and Trace</nuxt-link>
+                  <nuxt-link to="/trackandtrace" class="btn btn-neutral my-2">Track and Trace</nuxt-link>
                 </div>
               </div>
             </div>
@@ -38,7 +38,7 @@
                       </div>
                       <h5 class="h3">Projects</h5>
                       <p>Currently working and supporting a major government project.</p>
-                      <p>Actively marketing and developing a track and trace and customer journey management</p>
+                      <p>Actively marketing and developing customer journey management and track and trace systems.</p>
                     </div>
                   </div>
                   <div class="card">
@@ -47,7 +47,7 @@
                         <i class="ni ni-istanbul"></i>
                       </div>
                       <h5 class="h3">UK Based</h5>
-                      <p>Based in central Milton Keynes, UK with easy access to
+                      <p>Based in Central Milton Keynes, UK with easy access to
                         London. With the ability to remote work anywhere in the
                         world.</p>
                       <div>
@@ -64,8 +64,8 @@
                       <div class="icon icon-shape bg-gradient-success text-white rounded-circle shadow mb-4">
                         <i class="ni ni-planet"></i>
                       </div>
-                      <h5 class="h3">Prepare Launch</h5>
-                      <p>With multiple projects under my belt I am well versed in deadlines and delivering high quality code. </p>
+                      <h5 class="h3">Well prepared</h5>
+                      <p>With multiple projects under my belt I am well versed in deadlines and delivering high quality maintainable code. </p>
                       <div>
                         <badge type="warning" rounded>marketing</badge>
                         <badge type="warning" rounded>product</badge>
@@ -100,11 +100,15 @@
       </div>
     </div>
     <!-- Page content -->
-    <section class="py-6 pb-9 bg-default">
+    <section id="id-about-me" class="py-6 pb-9 bg-default">
       <div class="row justify-content-center text-center">
         <div class="col-md-6">
           <h2 class="display-3 text-white">About me</h2>
-          <p class="lead text-white">I will take every single request made very professionally, building relationships with customers and clients is very important to me.</p>
+          <p class="lead text-white">
+            Professionalism and client rapport is something I consider to be very important within a business environment.<br>
+            Therefore I will take every single request made seriously while building a relationship with customers.
+          </p>
+          <p class="lead text-white">I started CloudAM after a wanting to work for myself in a flexible environment to exercise my passion of technology, making and designing software and collaborating with like minded people.</p>
         </div>
       </div>
     </section>
@@ -119,10 +123,9 @@
                     <div class="icon icon-shape bg-gradient-primary text-white rounded-circle mb-4">
                       <i class="ni ni-check-bold"></i>
                     </div>
-                    <h4 class="h3 text-primary text-uppercase">Awesome Support</h4>
+                    <h4 class="h3 text-primary text-uppercase">Friendly Support</h4>
                     <p>When I create something not only do I put a lot of thought into how to build
-                      something, but how it is going to be used. And if things do go wrong, I will
-                      always fix them.</p>
+                      it, but how it is going to be used. And if things do go wrong, I will make it my highest priority to get things up and running again.</p>
                   </div>
                 </div>
               </div>
@@ -132,7 +135,7 @@
                     <div class="icon icon-shape bg-gradient-success text-white rounded-circle mb-4">
                       <i class="ni ni-istanbul"></i>
                     </div>
-                    <h4 class="h3 text-success text-uppercase">Modular Components</h4>
+                    <h4 class="h3 text-success text-uppercase">Agile practises</h4>
                     <p class="description mt-3">I am well practised in modern containerised microservices and the latest AWS
                       technologies. I've deployed multiple production ready applications which are
                       still running inside AWS and other cloud platforms.</p>
@@ -192,7 +195,7 @@
                   </div>
                 </li>
               </ul>
-              <nuxt-link to="/tat" class="font-weight-bold text-info mt-5">Explore Track and Trace further</nuxt-link>
+              <nuxt-link to="/trackandtrace" class="font-weight-bold text-info mt-5">Explore Track and Trace further</nuxt-link>
             </div>
           </div>
         </div>
@@ -225,8 +228,10 @@
           <div id='contactme' class="col-md-6 order-md-1">
             <div class="pr-md-5">
               <h1>Contact me</h1>
-              <p><a href="mailto:adam@cloudam.co.uk">adam@cloudam.co.uk</a></p>
-              <p><a href="tel:+447700022012">+447700022012</a></p>
+              <ul>
+                <li>Via email on: <a href="mailto:adam@cloudam.co.uk">adam@cloudam.co.uk</a></li>
+                <li>Via phone: <a href="tel:+447700022012">+447700022012</a></li>
+              </ul>
             </div>
           </div>
         </div>

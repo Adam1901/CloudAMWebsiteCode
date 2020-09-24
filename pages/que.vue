@@ -10,7 +10,7 @@
                 <h2 class="display-4 text-white font-weight-light">{{ subtitle }}</h2>
 
                 <div class="mt-5">
-                    <base-button class="btn btn-neutral my-2" @click="window.open(demoLink, '_blank')">Demo</base-button>
+                  <base-button class="btn btn-neutral my-2" @click="openNewTab();">See a demo here</base-button>
                 </div>
               </div>
             </div>
@@ -142,6 +142,11 @@ export default {
   components: {
     [Tooltip.name]: Tooltip
   },
+  methods: {
+    openNewTab() {
+      window.open(this.demoLink, '_blank')
+    }
+  },
   data() {
     return {
       title: 'QUE',
@@ -149,36 +154,36 @@ export default {
       demoLink: 'http://demo.cloudam.co.uk',
       first: {
         title: 'Customer Journey',
-        text: 'Design a perfect customer journey for your brand',
+        text: 'Design a perfect customer journey for your brand.',
         tags: ['design', 'branch', 'brand']
       },
       second: {
-        title: 'Works in any store',
-        text: 'Will work for any stores or branches. From a single coffee shop to a global brand',
+        title: 'Works anywhere',
+        text: 'Will work for any stores or branches. From a single coffee shop to a multi national brand.',
         tags: ['Scalable', 'secure', 'affordable']
       },
       third: {
         title: 'Build using the latest technologies',
-        text: 'Build ontop of the latest technologies to ensure an agile flexible product',
-        tags: ['secure','safe','fast']
+        text: 'Build ontop of the latest technologies to ensure an agile flexible product.',
+        tags: ['secure', 'safe', 'fast']
       },
       fourth: {
         title: 'User experience',
-        text: 'Build with the user in mind',
+        text: 'Build with the user in mind.',
         tags: ['UX', 'Design', 'easy']
       },
       mid: {
         top: {
-          title: 'middle',
-          text: 'midText'
+          title: 'Why?',
+          text: 'I\'ve created QUE over a series of a few years with the goal in mind to go to market. QUE is designed the way queueing software should work.'
         },
         left: {
-          title: 'midLeft',
-          text: 'midleft'
+          title: 'It fits for you',
+          text: 'With multiple years of queue management experience we know how queueing should work and how the customers think.'
         },
         right: {
-          title: 'midR',
-          text: 'midR'
+          title: 'Request a demo',
+          text: 'Find my contact details on the home screen and ask us for a Demo of what QUE can do.'
         }
       },
 

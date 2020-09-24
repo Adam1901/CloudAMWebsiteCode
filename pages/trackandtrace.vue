@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="header bg-gradient-primary pt-5 pb-7">
+    <diav class="header bg-gradient-primary pt-5 pb-7">
       <div class="container">
         <div class="header-body">
           <div class="row align-items-center">
@@ -10,7 +10,7 @@
                 <h2 class="display-4 text-white font-weight-light">{{ subtitle }}</h2>
 
                 <div class="mt-5">
-                  <base-button class="btn btn-neutral my-2" @click="window.open(demoLink, '_blank')">Demo</base-button>
+                  <base-button class="btn btn-neutral my-2" @click="openNewTab">See a demo here</base-button>
                 </div>
               </div>
             </div>
@@ -87,7 +87,7 @@
           <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
         </svg>
       </div>
-    </div>
+    </diav>
 
     <section class="py-6 pb-9 bg-default">
       <div class="row justify-content-center text-center">
@@ -109,8 +109,8 @@
                     <div class="icon icon-shape bg-gradient-primary text-white rounded-circle mb-4">
                       <i class="ni ni-check-bold"></i>
                     </div>
-                    <h4 class="h3 text-primary text-uppercase">{{mid.left.title}}</h4>
-                    <p>{{mid.left.text}}</p>
+                    <h4 class="h3 text-primary text-uppercase">{{ mid.left.title }}</h4>
+                    <p>{{ mid.left.text }}</p>
                   </div>
                 </div>
               </div>
@@ -120,8 +120,8 @@
                     <div class="icon icon-shape bg-gradient-success text-white rounded-circle mb-4">
                       <i class="ni ni-istanbul"></i>
                     </div>
-                    <h4 class="h3 text-success text-uppercase">{{mid.right.title}}</h4>
-                    <p class="description mt-3">{{mid.right.text}}</p>
+                    <h4 class="h3 text-success text-uppercase">{{ mid.right.title }}</h4>
+                    <p class="description mt-3">{{ mid.right.text }}</p>
                   </div>
                 </div>
               </div>
@@ -143,11 +143,16 @@ export default {
   components: {
     [Tooltip.name]: Tooltip
   },
+  methods: {
+    openNewTab() {
+      window.open(this.demoLink, '_blank')
+    }
+  },
   data() {
     return {
       title: 'Track And Trace',
-      subtitle: 'Put your customers in charge of the track',
-      demoLink: 'http://trac.cloudam.co.uk',
+      subtitle: 'Putting your customers in charge but keeping you in control',
+      demoLink: 'http://track.cloudam.co.uk',
       first: {
         title: 'QUE1',
         text: '1',
@@ -174,11 +179,11 @@ export default {
           text: 'midText'
         },
         left: {
-          title:'midLeft',
+          title: 'midLeft',
           text: 'midleft'
         },
-        right:{
-          title:'midR',
+        right: {
+          title: 'midR',
           text: 'midR'
         }
       },

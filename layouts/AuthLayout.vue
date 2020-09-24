@@ -39,7 +39,7 @@
          </li>
 
          <li class="nav-item">
-           <nuxt-link to="/tat" class="nav-link">
+           <nuxt-link to="/trackandtrace" class="nav-link">
              <span class="nav-link-inner--text">Track and Trace</span>
            </nuxt-link>
          </li>
