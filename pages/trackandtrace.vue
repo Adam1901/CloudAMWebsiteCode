@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="header bg-gradient-info pt-5 pb-7">
+    <div class="header bg-gradient-success pt-5 pb-7">
       <div class="container">
         <div class="header-body">
           <div class="row align-items-center">
@@ -10,7 +10,7 @@
                 <h2 class="display-4 text-white font-weight-light">{{ subtitle }}</h2>
 
                 <div class="mt-5">
-                  <base-button class="btn btn-neutral my-2" @click="openNewTab();">See a demo here</base-button>
+                  <base-button class="btn btn-neutral my-2" @click="openNewTab">See a demo here</base-button>
                 </div>
               </div>
             </div>
@@ -131,6 +131,7 @@
       </div>
     </section>
 
+
   </div>
 </template>
 <script>
@@ -149,41 +150,41 @@ export default {
   },
   data() {
     return {
-      title: 'QUE',
-      subtitle: 'QUE manages the customer\'s journeys and appointments in all stores. With support for kiosks, media devices and as flexible as you need.',
-      demoLink: 'http://demo.cloudam.co.uk',
+      title: 'Track And Trace',
+      subtitle: 'Putting your customers in charge but keeping you in control',
+      demoLink: 'http://track.cloudam.co.uk',
       first: {
-        title: 'Customer Journey',
-        text: 'Design a perfect customer journey for your brand.',
-        tags: ['design', 'branch', 'brand']
+        title: 'Reporting',
+        text: 'We allow you to run reports for how you need them.',
+        tags: ['export', 'reporting']
       },
       second: {
-        title: 'Works anywhere',
-        text: 'Will work for any stores or branches. From a single coffee shop to a multi national brand.',
-        tags: ['Scalable', 'secure', 'affordable']
+        title: 'UK government guidelines',
+        text: 'Conforms to the ever changing COVID guidelines and is flexible enough to adapt.',
+        tags: ['NHS', 'PUBLIC HEALTH']
       },
       third: {
-        title: 'Build using the latest technologies',
-        text: 'Build ontop of the latest technologies to ensure an agile flexible product.',
-        tags: ['secure', 'safe', 'fast']
+        title: 'Works for any store or use case',
+        text: 'With just a branch code needed any customer can report to any store',
+        tags: ['QR', 'NFC', 'URLS']
       },
       fourth: {
-        title: 'User experience',
-        text: 'Build with the user in mind.',
-        tags: ['UX', 'Design', 'easy']
+        title: 'Easy to use',
+        text: 'With a simple design any customer will be able to report',
+        tags: ['groups', 'UX', 'simple']
       },
       mid: {
         top: {
           title: 'Why?',
-          text: 'I\'ve created QUE over a series of a few years with the goal in mind to go to market. QUE is designed the way queueing software should work.'
+          text: 'We started building track and trace at the beginning of lock down. Always confirming to the latest guidelines and laws. We built it to be easy to deploy and easy to use'
         },
         left: {
-          title: 'It fits for you',
-          text: 'With multiple years of queue management experience we know how queueing should work and how the customers think.'
+          title: 'Secure',
+          text: 'Replaces the register at the front of the store which could pose a risk to user data. We want everyone\'s data to be safe and secure.'
         },
         right: {
-          title: 'Request a demo',
-          text: 'Find my contact details on the home screen and ask us for a Demo of what QUE can do.'
+          title: 'REQUEST A DEMO',
+          text: 'Find my contact details on the home screen and ask us for a Demo of what track and trace can do.'
         }
       },
 

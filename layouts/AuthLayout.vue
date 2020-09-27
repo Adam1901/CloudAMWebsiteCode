@@ -34,12 +34,18 @@
        <ul class="navbar-nav mr-auto">
          <li class="nav-item">
            <nuxt-link to="/" class="nav-link">
+             <span class="nav-link-inner--text">Home</span>
+           </nuxt-link>
+         </li>
+
+         <li class="nav-item">
+           <nuxt-link to="/trackandtrace" class="nav-link">
              <span class="nav-link-inner--text">Track and Trace</span>
            </nuxt-link>
          </li>
 
          <li class="nav-item">
-           <nuxt-link to="/" class="nav-link">
+           <nuxt-link to="/que" class="nav-link">
              <span class="nav-link-inner--text">Que</span>
            </nuxt-link>
          </li>
