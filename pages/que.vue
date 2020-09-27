@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="header bg-gradient-primary pt-5 pb-7">
+    <div class="header bg-gradient-info pt-5 pb-7">
       <div class="container">
         <div class="header-body">
           <div class="row align-items-center">

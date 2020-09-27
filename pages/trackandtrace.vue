@@ -1,6 +1,6 @@
 <template>
   <div>
-    <diav class="header bg-gradient-primary pt-5 pb-7">
+    <div class="header bg-gradient-success pt-5 pb-7">
       <div class="container">
         <div class="header-body">
           <div class="row align-items-center">
@@ -87,7 +87,7 @@
           <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
         </svg>
       </div>
-    </diav>
+    </div>
 
     <section class="py-6 pb-9 bg-default">
       <div class="row justify-content-center text-center">
@@ -154,37 +154,37 @@ export default {
       subtitle: 'Putting your customers in charge but keeping you in control',
       demoLink: 'http://track.cloudam.co.uk',
       first: {
-        title: 'QUE1',
-        text: '1',
-        tags: ['1111', '1111', '11111']
+        title: 'Reporting',
+        text: 'We allow you to run reports for how you need them.',
+        tags: ['export', 'reporting']
       },
       second: {
-        title: 'QUE2',
-        text: '2',
-        tags: ['Aaaa', 'Bvvv', 'Ccccc']
+        title: 'UK government guidelines',
+        text: 'Conforms to the ever changing COVID guidelines and is flexible enough to adapt.',
+        tags: ['NHS', 'PUBLIC HEALTH']
       },
       third: {
-        title: 'QUE',
-        text: '3',
-        tags: ['A3', 'B3', '3C']
+        title: 'Works for any store or use case',
+        text: 'With just a branch code needed any customer can report to any store',
+        tags: ['QR', 'NFC', 'URLS']
       },
       fourth: {
-        title: 'QUE4',
-        text: '4',
-        tags: ['A4', 'B4', 'C4']
+        title: 'Easy to use',
+        text: 'With a simple design any customer will be able to report',
+        tags: ['groups', 'UX', 'simple']
       },
       mid: {
         top: {
-          title: 'middle',
-          text: 'midText'
+          title: 'Why?',
+          text: 'We started building track and trace at the beginning of lock down. Always confirming to the latest guidelines and laws. We built it to be easy to deploy and easy to use'
         },
         left: {
-          title: 'midLeft',
-          text: 'midleft'
+          title: 'Secure',
+          text: 'Replaces the register at the front of the store which could pose a risk to user data. We want everyone\'s data to be safe and secure.'
         },
         right: {
-          title: 'midR',
-          text: 'midR'
+          title: 'REQUEST A DEMO',
+          text: 'Find my contact details on the home screen and ask us for a Demo of what track and trace can do.'
         }
       },
 

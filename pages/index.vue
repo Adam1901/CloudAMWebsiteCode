@@ -151,7 +151,7 @@
       <div class="container">
         <div class="row row-grid align-items-center">
           <div class="col-md-6 order-md-2">
-            <img src="~/static/img/theme/landing-1.png" class="img-fluid" alt="Landing image">
+            <img src="~/static/img/theme/track.png" class="img-fluid" alt="Landing image">
           </div>
           <div class="col-md-6 order-md-1">
             <div class="pr-md-5">
@@ -206,7 +206,7 @@
       <div class="container">
         <div class="row row-grid align-items-center">
           <div class="col-md-6 order-md-2">
-            <img src="~/static/img/theme/landing-3.png" class="img-fluid" alt="Landing image 3">
+            <img src="~/static/img/theme/que.png" class="img-fluid" alt="Landing image 3">
           </div>
           <div class="col-md-6 order-md-1">
             <div class="pr-md-5">
@@ -223,7 +223,7 @@
       <div class="container">
         <div class="row row-grid align-items-center">
           <div class="col-md-6 order-md-2">
-            <img src="~/static/img/theme/landing-3.png" class="img-fluid" alt="Landing image 3">
+
           </div>
           <div id='contactme' class="col-md-6 order-md-1">
             <div class="pr-md-5">
@@ -250,3 +250,16 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: auto;
+  transform: skew(0deg,-3deg);
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+</style>
