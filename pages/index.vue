@@ -16,8 +16,7 @@
                     <base-button slot="title-container" type="success" class="dropdown-toggle">
                       CV
                     </base-button>
-                    <a target="_blank" class="dropdown-item" href="/CV/AdamMeadows.html">Web</a>
-                    <a target="_blank" class="dropdown-item" href="/CV/AdamMeadows.pdf">PDF</a>
+                    <a target="_blank" class="dropdown-item" href="/cv/AdamMeadows.pdf">PDF</a>
                   </base-dropdown>
                   <base-button v-scroll-to="'#id-about-me'" class="btn btn-neutral my-2">About me</base-button>
                 </div>
