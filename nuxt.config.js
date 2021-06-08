@@ -60,8 +60,6 @@ module.exports = {
   */
   plugins: [
     '~/plugins/dashboard/dashboard-plugin',
-    {src: '~/plugins/dashboard/full-calendar', ssr: false },
-    {src: '~/plugins/dashboard/world-map', ssr: false },
   ],
 
   /*
@@ -69,16 +67,9 @@ module.exports = {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    '@nuxtjs/pwa',
     'vue-scrollto/nuxt',
   ],
-  /*
-  ** Axios module configuration
-  */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
+
 
   /*
   ** Build configuration
