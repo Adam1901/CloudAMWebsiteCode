@@ -24,6 +24,7 @@
                 <div class="mt-5">
                   <nuxt-link to="/que" class="btn btn-neutral my-2">Que</nuxt-link>
                   <nuxt-link to="/trackandtrace" class="btn btn-neutral my-2">Track and Trace</nuxt-link>
+                  <nuxt-link to="/threec" class="btn btn-neutral my-2">threeC.tv</nuxt-link>
                 </div>
               </div>
             </div>

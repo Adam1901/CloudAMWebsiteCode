@@ -1,4 +1,3 @@
-
 /*!
 
 =========================================================
@@ -21,6 +20,7 @@ console.log('ENV', process.env.NODE_ENV)
 
 module.exports = {
   target: 'static',
+  ssr: false,
   router: {
     base: '/',
     linkExactActiveClass: 'active'
@@ -31,21 +31,21 @@ module.exports = {
   head: {
     title: 'CloudAm - Home',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'CloudAM home page' }
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {hid: 'description', name: 'description', content: 'CloudAM home page'}
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: 'favicon.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'},
-      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.6.3/css/all.css', integrity: "sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/", crossorigin: "anonymous"}
+      {rel: 'icon', type: 'image/png', href: 'favicon.png'},
+      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'},
+      {rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.6.3/css/all.css', integrity: "sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/", crossorigin: "anonymous"}
     ]
   },
 
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: {color: '#fff'},
 
   /*
   ** Global CSS

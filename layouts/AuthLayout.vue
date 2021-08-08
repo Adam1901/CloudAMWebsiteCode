@@ -50,6 +50,12 @@
             </nuxt-link>
           </li>
 
+          <li class="nav-item">
+            <nuxt-link to="/threec" class="nav-link">
+              <span class="nav-link-inner--text">threeC.tv</span>
+            </nuxt-link>
+          </li>
+
         </ul>
         <hr class="d-lg-none">
         <ul class="navbar-nav align-items-lg-center ml-lg-auto">
